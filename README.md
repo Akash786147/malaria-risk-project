@@ -1,13 +1,11 @@
 # Malaria Risk Modelling Project
 
-This folder contains the malaria PDF sources, extracted CSV files, and scripts for preparing data for ML/healthcare notebooks.
+This folder contains the malaria datasets and notebooks for geospatial analysis, mechanistic modelling, time-series forecasting, and AI/ML risk prediction.
 
 ## Structure
 
-- `data/raw/`: original PDF files used as the source data.
 - `data/processed/`: CSV files extracted from the PDFs.
 - `data/analysis_ready/`: cleaned and enriched CSV files used by the project notebooks.
-- `scripts/`: extraction and cleaning code.
 - `notebooks/`: project notebooks for analysis and modelling.
 - `reference/`: uploaded course/example notebooks used as modelling references.
 - `PROJECT_PLAN.md`: review of the uploaded notebooks and how they map to this malaria project.
@@ -26,25 +24,9 @@ This folder contains the malaria PDF sources, extracted CSV files, and scripts f
 - `data/processed/state_epidemiological_2024_2025_from_pdf.csv`
   - State/UT-level epidemiological indicators for 2024-2025, including Pf%, TPR, TFR, category, imported cases, and indigenous cases where available.
 
-## Regenerate CSVs
+## Usable Datasets
 
-From this folder, run:
-
-```bash
-python3 scripts/extract_malaria_pdf_data.py
-```
-
-The script reads PDFs from `data/raw/` and writes CSV files to `data/processed/`.
-
-## Prepare Usable Datasets
-
-The project notebooks use the analysis-ready CSV files. To regenerate them from the existing processed CSVs, run:
-
-```bash
-python3 scripts/prepare_analysis_ready_data.py
-```
-
-This writes:
+The project notebooks use these analysis-ready CSV files:
 
 - `data/analysis_ready/district_malaria_clean.csv`
 - `data/analysis_ready/state_year_malaria_clean.csv`
