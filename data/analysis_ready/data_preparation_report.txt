@@ -1,0 +1,27 @@
+Analysis-ready malaria data preparation report
+==============================================
+
+district_malaria_clean.csv
+  district_rows=16781
+  duplicate_year_state_district_rows=32
+  missing_population_rows=0
+
+state_year_malaria_clean.csv
+  state_year_rows=858
+  states_or_uts=38
+  year_range=2000-2024
+  missing_population_rows=0
+
+selected_regions_state_year.csv
+  selected_region_rows=75
+
+aiml_state_year_features.csv
+  aiml_rows=706
+  high_risk_threshold_cases_per_100k=157.980311
+  high_risk_rows=178
+
+Source CSV files
+  /Users/Lenovo/Documents/New project/malaria-risk-project/data/processed/district_malaria_2000_2024_from_pdf.csv
+  /Users/Lenovo/Documents/New project/malaria-risk-project/data/processed/state_malaria_situation_2021_2025_from_pdf.csv
+  /Users/Lenovo/Documents/New project/malaria-risk-project/data/processed/state_epidemiological_2024_2025_from_pdf.csv
+  /Users/Lenovo/Documents/New project/malaria-risk-project/data/raw/state_population_2011.csv

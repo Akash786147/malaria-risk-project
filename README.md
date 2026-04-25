@@ -6,6 +6,7 @@ This folder contains the malaria PDF sources, extracted CSV files, and scripts f
 
 - `data/raw/`: original PDF files used as the source data.
 - `data/processed/`: CSV files extracted from the PDFs.
+- `data/analysis_ready/`: cleaned and enriched CSV files used by the project notebooks.
 - `scripts/`: extraction and cleaning code.
 - `notebooks/`: project notebooks for analysis and modelling.
 - `reference/`: uploaded course/example notebooks used as modelling references.
@@ -34,6 +35,22 @@ python3 scripts/extract_malaria_pdf_data.py
 ```
 
 The script reads PDFs from `data/raw/` and writes CSV files to `data/processed/`.
+
+## Prepare Usable Datasets
+
+The project notebooks use the analysis-ready CSV files. To regenerate them from the existing processed CSVs, run:
+
+```bash
+python3 scripts/prepare_analysis_ready_data.py
+```
+
+This writes:
+
+- `data/analysis_ready/district_malaria_clean.csv`
+- `data/analysis_ready/state_year_malaria_clean.csv`
+- `data/analysis_ready/selected_regions_state_year.csv`
+- `data/analysis_ready/aiml_state_year_features.csv`
+- `data/analysis_ready/data_preparation_report.txt`
 
 ## Main Assignment Notebook
 
